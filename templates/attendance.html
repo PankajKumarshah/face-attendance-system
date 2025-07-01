@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Attendance</title></head>
+<body>
+  <h2>Attendance Records</h2>
+  <table border="1">
+    <tr><th>Name</th><th>Timestamp</th></tr>
+    {% for name, time in records %}
+    <tr><td>{{ name }}</td><td>{{ time }}</td></tr>
+    {% endfor %}
+  </table>
+  <a href="/">Back</a>
+</body>
+</html>
